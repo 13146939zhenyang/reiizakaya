@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+	font-family: 'HOT-KyoMadokaKanalarge' !important;
+	color: #ffffff;
+	font-size: 24px;
+    background-color: rgb(23, 52, 72) !important;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "HOT-KyoMadokaKanalarge";
+    src: url('../public/fonts/HOT-KyoMadokaKanalarge\ Std\ R.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "HOT-武骨";
+    src: url('../public/fonts/HOT-武骨\ Std.otf');
+    font-weight: normal;
+    font-style: normal;
+}
