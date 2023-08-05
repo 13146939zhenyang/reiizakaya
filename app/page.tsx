@@ -1,7 +1,8 @@
-import Image from 'next/image'
-
+import { Logo, Name } from '../public'
 export default function Home() {
   return (
-    <main>ReiIzakaya</main>
+    <main className='text-center'>
+      <img src={Logo.src} alt="" />
+    </main>
   )
 }
