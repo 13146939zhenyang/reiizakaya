@@ -1,5 +1,5 @@
 import { Navbar } from "@/components"
-import { Logo, Name, Icon, HomeBg, Menu1, Menu2, Menu3, Menu4 } from '@/public'
+import { Logo, Name, Icon, HomeBg, Menu1, Menu2, Menu3, Menu4, P1, P2, P3, P4, P5, P6, P7, P8 } from '@/public'
 
 export default function Home() {
   return (
@@ -7,7 +7,7 @@ export default function Home() {
       <Navbar />
       <div className="w-screen md:pt-[300px] pt-[120px]">
         <div className="" id='about-us'>
-          <div className="mx-4 md:mx-40 my-2 md:my-10 flex flex-col gap-2 md:gap-4 text-[14px] md:text-xl text-justify">
+          <div className="mx-4 md:mx-40 my-5 md:my-10 flex flex-col gap-2 md:gap-4 text-[14px] md:text-xl text-justify">
             <p>Izakaya (居酒屋) is made up of three kanji with the meaning, in order, “stay-drink-place.”</p>
             <p>
               In Japan, Izakaya are places where people come to unwind with co-workers and friends. Especially after a long days work, it’s important for workers to find a place they can kick back and enjoy their hard-earned day over drinks and tasty snacks in the company of their friends and co workers.
@@ -16,28 +16,27 @@ export default function Home() {
           </div>
           <img src={HomeBg.src} alt='reiizakaya-syd-home-bg' className="pt-5" />
         </div>
-        <div className="w-screen justify-center sm:justify-start flex flex-row flex-wrap pb-5 px-10 gap-x-6 gap-y-10 overflow-hidden" id='menu'>
+        <div className="w-screen justify-center sm:justify-start flex flex-row flex-wrap pb-5 gap-x-6 gap-y-10 overflow-hidden" id='menu'>
           <swiper-container
             class="menu-swiper"
             slides-per-view="auto"
             space-between="10"
             autoplay='true'
-            // loop='true'
             grab-cursor="true"
             scrollbar="true"
             zoom="true"
           >
             <swiper-slide className="bg-transparent">
-              <img src={Menu1.src} alt="" className="md:w-[680px] w-[310px] p-3" />
+              <img src={Menu1.src} alt="" className="md:w-[680px] w-[400px] p-3" />
             </swiper-slide>
             <swiper-slide className="bg-transparent">
-              <img src={Menu2.src} alt="" className="md:w-[680px] w-[310px] p-3" />
+              <img src={Menu2.src} alt="" className="md:w-[680px] w-[400px] p-3" />
             </swiper-slide>
             <swiper-slide className="bg-transparent">
-              <img src={Menu3.src} alt="" className="md:w-[680px] w-[310px] p-3" />
+              <img src={Menu3.src} alt="" className="md:w-[680px] w-[400px] p-3" />
             </swiper-slide>
             <swiper-slide className="bg-transparent">
-              <img src={Menu4.src} alt="" className="md:w-[680px] w-[310px] p-3" />
+              <img src={Menu4.src} alt="" className="md:w-[680px] w-[400px] p-3" />
             </swiper-slide>
           </swiper-container>
 
@@ -61,7 +60,39 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="h-[100vh]" id='pictures'>pictures</div>
+        <div className="w-screen justify-center sm:justify-start flex flex-row flex-wrap pb-5 gap-x-6 gap-y-10 overflow-hidden" id='pictures'>
+          <swiper-container
+            class="menu-swiper"
+            slides-per-view="5"
+            space-between="1"
+            autoplay='true'
+            grab-cursor="true"
+            scrollbar="true"
+            zoom="true"
+          >
+            <swiper-slide className="bg-transparent">
+              <img src={P1.src} alt="" className="md:w-[380px] w-[400px]" />
+            </swiper-slide>
+            <swiper-slide className="bg-transparent">
+              <img src={P2.src} alt="" className="md:w-[380px] w-[400px]" />
+            </swiper-slide>
+            <swiper-slide className="bg-transparent">
+              <img src={P3.src} alt="" className="md:w-[380px] w-[400px]" />
+            </swiper-slide>
+            <swiper-slide className="bg-transparent">
+              <img src={P4.src} alt="" className="md:w-[380px] w-[400px]" />
+            </swiper-slide>
+            <swiper-slide className="bg-transparent">
+              <img src={P5.src} alt="" className="md:w-[380px] w-[400px]" />
+            </swiper-slide>
+            <swiper-slide className="bg-transparent">
+              <img src={P7.src} alt="" className="md:w-[380px] w-[400px]" />
+            </swiper-slide>
+            <swiper-slide className="bg-transparent">
+              <img src={P8.src} alt="" className="md:w-[380px] w-[400px]" />
+            </swiper-slide>
+          </swiper-container>
+        </div>
         <div className="w-screen my-5 md:my-20 py-5" id='contact-booking'>
           <div className=" md:mx-40 mx-5 flex flex-col mb-4 md:p-4 p-2">
             <p className="md:tracking-widest tracking-tighter md:text-2xl text-[14px] md:mb-1 mb-[2px]">You can find us with @rei_izakaya on Instagram & Facebook</p>

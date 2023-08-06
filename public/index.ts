@@ -6,5 +6,13 @@ import Menu1 from '@/public/menu.jpg'
 import Menu2 from '@/public/menus.jpg'
 import Menu3 from '@/public/menuss.jpg'
 import Menu4 from '@/public/menusss.jpg'
+import P1 from '@/public/photo1.jpg'
+import P2 from '@/public/photo2.jpg'
+import P3 from '@/public/photo3.jpg'
+import P4 from '@/public/photo4.jpg'
+import P5 from '@/public/photo5.jpg'
+import P6 from '@/public/photo6.jpg'
+import P7 from '@/public/photo7.jpg'
+import P8 from '@/public/photo8.jpg'
 
-export { Logo, Name, Icon, HomeBg, Menu1, Menu2, Menu3, Menu4 }
+export { Logo, Name, Icon, HomeBg, Menu1, Menu2, Menu3, Menu4, P1, P2, P3, P4, P5, P6, P7, P8 }
