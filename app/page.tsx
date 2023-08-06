@@ -57,12 +57,22 @@ export default function Home() {
                 <img src={Logo.src} alt="reiizakaya-logo" className='md:w-[161px] w-[60px] md:mr-6 mr-1 md:mt-1' />
                 <img src={Icon.src} alt="reiizakaya-icon" className='md:w-[286px] w-[100px] md:mr-5 mr-1' />
                 <img src={Name.src} alt="reiizakay-name" className='md:w-[224px] w-[70px] md:mt-5 mt-1' />
-            </div>
+              </div>
             </div>
           </div>
         </div>
         <div className="h-[100vh]" id='pictures'>pictures</div>
-        <div className="h-[100vh]" id='contact-booking'>booking</div>
+        <div className="w-screen my-5 md:my-20 py-5" id='contact-booking'>
+          <div className=" md:mx-40 mx-5 flex flex-col mb-4 md:p-4 p-2">
+            <p className="md:tracking-widest tracking-tighter md:text-2xl text-[14px] md:mb-1 mb-[2px]">You can find us with @rei_izakaya on Instagram & Facebook</p>
+            <p className="md:tracking-widest tracking-tighter md:text-2xl text-[14px] mb-6">Your feedback also means the world to us.</p>
+            <p className="md:tracking-widest tracking-tighter md:text-2xl text-[14px] md:mb-1 mb-[2px]">For bookins please contact <a href='tel:0404517777'>
+              0404 517 777
+            </a></p>
+            <p className="md:tracking-widest tracking-tighter md:text-2xl text-[14px] md:mb-1 mb-[2px]">Reservations for groups of 4 and above only at the moment.</p>
+            <p className="md:tracking-widest tracking-tighter md:text-2xl text-[14px] md:mb-1 mb-[2px]">Sorry for any inconvenience.</p>
+          </div>
+        </div>
       </div>
     </main>
   )

@@ -60,7 +60,7 @@ const Navbar = () => {
             <div className='md:mx-40 mx-2 flex justify-between items-center'>
                 {navbar.map((item, index) => (
                     <div key={index} onClick={() => handleClick(item.key, item.path)}>
-                        <p className={`${selected === item.key ? 'text-[#B11F24]' : 'text-[#F2F2F2]'} text-[14px] md:text-3xl font-bold cursor-pointer hover:text-[#B11F24] transition-all duration-150 ease-in-out`}>{item.label}</p>
+                        <p className={`${selected === item.key ? 'text-[#B11F24]' : 'text-[#F2F2F2]'} text-[12px] md:text-3xl font-bold cursor-pointer hover:text-[#B11F24] transition-all duration-150 ease-in-out`}>{item.label}</p>
                     </div>
                 ))}
             </div>
