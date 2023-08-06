@@ -1,5 +1,5 @@
 import { Navbar } from "@/components"
-import { HomeBg, Menu1, Menu2, Menu3, Menu4 } from '@/public'
+import { Logo, Name, Icon, HomeBg, Menu1, Menu2, Menu3, Menu4 } from '@/public'
 
 export default function Home() {
   return (
@@ -28,21 +28,39 @@ export default function Home() {
             zoom="true"
           >
             <swiper-slide className="bg-transparent">
-              <img src={Menu1.src} alt="" className="md:w-[680px] w-[300px] p-3" />
+              <img src={Menu1.src} alt="" className="md:w-[680px] w-[310px] p-3" />
             </swiper-slide>
             <swiper-slide className="bg-transparent">
-              <img src={Menu2.src} alt="" className="md:w-[680px] w-[300px] p-3" />
+              <img src={Menu2.src} alt="" className="md:w-[680px] w-[310px] p-3" />
             </swiper-slide>
             <swiper-slide className="bg-transparent">
-              <img src={Menu3.src} alt="" className="md:w-[680px] w-[300px] p-3" />
+              <img src={Menu3.src} alt="" className="md:w-[680px] w-[310px] p-3" />
             </swiper-slide>
             <swiper-slide className="bg-transparent">
-              <img src={Menu4.src} alt="" className="md:w-[680px] w-[300px] p-3" />
+              <img src={Menu4.src} alt="" className="md:w-[680px] w-[310px] p-3" />
             </swiper-slide>
           </swiper-container>
 
         </div>
-        <div className="h-[100vh]" id='news'>news</div>
+        <div className="w-screen my-5 md:my-20 py-5" id='news'>
+          <div className="bg-white md:mx-40 mx-5 flex justify-center items-center mb-4 md:p-4 p-2">
+            <div className="w-full bg-[#173448] md:px-[130px] px-5 md:py-[180px] py-7">
+              <p className="uppercase md:tracking-widest tracking-tighter md:text-2xl text-xs md:mb-[50px] mb-[10px]">To dear valued customers</p>
+              <p className="md:tracking-widest tracking-tighter md:text-2xl text-xs text-center md:mb-[20px] mb-[5px]">Please be informed that</p>
+              <p className="capitalize md:text-6xl text-xl text-center"> we are <span className="text-[#B11F24]">colsed</span></p>
+              <p className="md:tracking-widest tracking-tighter md:text-2xl text-xs text-center md:mb-[40px] mb-[12px]">for a private event</p>
+              <p className="capitalize md:text-6xl text-lg text-center md:mb-[80px] mb-[20px]"> 04/08/2023 <span className="text-[#B11F24]">Friday</span></p>
+              <p className="md:tracking-widest tracking-tighter md:text-2xl text-xs text-center">We apologize for any inconvenience</p>
+              <p className="md:tracking-widest tracking-tighter md:text-2xl text-xs text-center">Thank you for your understanding</p>
+              <p className="md:tracking-widest tracking-tighter md:text-2xl text-xs text-center md:mb-40 mb-10">and look forward to serving you soon</p>
+              <div className='md:mx-40 mx-10 flex justify-center items-center mb-4'>
+                <img src={Logo.src} alt="reiizakaya-logo" className='md:w-[161px] w-[60px] md:mr-6 mr-1 md:mt-1' />
+                <img src={Icon.src} alt="reiizakaya-icon" className='md:w-[286px] w-[100px] md:mr-5 mr-1' />
+                <img src={Name.src} alt="reiizakay-name" className='md:w-[224px] w-[70px] md:mt-5 mt-1' />
+            </div>
+            </div>
+          </div>
+        </div>
         <div className="h-[100vh]" id='pictures'>pictures</div>
         <div className="h-[100vh]" id='contact-booking'>booking</div>
       </div>
