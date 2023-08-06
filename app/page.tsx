@@ -1,5 +1,5 @@
 import { Navbar } from "@/components"
-import { HomeBg } from '@/public'
+import { HomeBg, Menu1, Menu2, Menu3, Menu4 } from '@/public'
 
 export default function Home() {
   return (
@@ -16,8 +16,31 @@ export default function Home() {
           </div>
           <img src={HomeBg.src} alt='reiizakaya-syd-home-bg' className="pt-5" />
         </div>
-        <div className="h-[100vh]" id='menu'>
-          menu
+        <div className="w-screen justify-center sm:justify-start flex flex-row flex-wrap pb-5 px-10 gap-x-6 gap-y-10 overflow-hidden" id='menu'>
+          <swiper-container
+            class="menu-swiper"
+            slides-per-view="auto"
+            space-between="10"
+            autoplay='true'
+            // loop='true'
+            grab-cursor="true"
+            scrollbar="true"
+            zoom="true"
+          >
+            <swiper-slide className="bg-transparent">
+              <img src={Menu1.src} alt="" className="md:w-[680px] w-[300px] p-3" />
+            </swiper-slide>
+            <swiper-slide className="bg-transparent">
+              <img src={Menu2.src} alt="" className="md:w-[680px] w-[300px] p-3" />
+            </swiper-slide>
+            <swiper-slide className="bg-transparent">
+              <img src={Menu3.src} alt="" className="md:w-[680px] w-[300px] p-3" />
+            </swiper-slide>
+            <swiper-slide className="bg-transparent">
+              <img src={Menu4.src} alt="" className="md:w-[680px] w-[300px] p-3" />
+            </swiper-slide>
+          </swiper-container>
+
         </div>
         <div className="h-[100vh]" id='news'>news</div>
         <div className="h-[100vh]" id='pictures'>pictures</div>

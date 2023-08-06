@@ -6,9 +6,9 @@ html,
 body {
     padding: 0;
     margin: 0;
-	font-family: 'HOT-KyoMadokaKanalarge' !important;
-	color: #ffffff;
-	font-size: 24px;
+    font-family: 'HOT-武骨' !important;
+    color: #ffffff;
+    font-size: 24px;
     background-color: #173448 !important;
     scroll-behavior: smooth;
 }
@@ -21,15 +21,50 @@ a {
 * {
     box-sizing: border-box;
 }
+
 @font-face {
     font-family: "HOT-KyoMadokaKanalarge";
     src: url('../public/fonts/HOT-KyoMadokaKanalarge\ Std\ R.otf');
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: "HOT-武骨";
     src: url('../public/fonts/HOT-武骨\ Std.otf');
     font-weight: normal;
     font-style: normal;
+}
+
+swiper-container {
+    width: 100%;
+}
+
+.menu-swiper swiper-slide {
+    width: 700px;
+
+    @media screen and (max-width: 600px) {
+        width: 300px;
+    }
+
+    height: auto;
+    margin: 15px 0px;
+}
+
+.menu-swiper {
+    --swiper-scrollbar-border-radius: 10px;
+    --swiper-scrollbar-top: auto;
+    --swiper-scrollbar-bottom: 0;
+    --swiper-scrollbar-left: auto;
+    --swiper-scrollbar-right: 4px;
+    --swiper-scrollbar-sides-offset: 5%;
+    --swiper-scrollbar-bg-color: rgba(255, 255, 255, 0.2);
+    --swiper-scrollbar-drag-bg-color: white;
+    --swiper-scrollbar-size: 6px;
+}
+
+.photo-swiper swiper-slide {
+    width: 287px;
+    height: auto;
+    margin: 15px 0px;
 }
