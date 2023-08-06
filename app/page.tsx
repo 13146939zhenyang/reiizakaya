@@ -62,8 +62,8 @@ export default function Home() {
         </div>
         <div className="w-screen justify-center sm:justify-start flex flex-row flex-wrap pb-5 gap-x-6 gap-y-10 overflow-hidden" id='pictures'>
           <swiper-container
-            class="menu-swiper"
-            slides-per-view="5"
+            class="photo-swiper"
+            slides-per-view="auto"
             space-between="1"
             autoplay='true'
             grab-cursor="true"
@@ -71,25 +71,25 @@ export default function Home() {
             zoom="true"
           >
             <swiper-slide className="bg-transparent">
-              <img src={P1.src} alt="" className="md:w-[380px] w-[400px]" />
+              <img src={P1.src} alt="" className="md:w-[380px] w-[200px] px-1" />
             </swiper-slide>
             <swiper-slide className="bg-transparent">
-              <img src={P2.src} alt="" className="md:w-[380px] w-[400px]" />
+              <img src={P2.src} alt="" className="md:w-[380px] w-[200px] px-1" />
             </swiper-slide>
             <swiper-slide className="bg-transparent">
-              <img src={P3.src} alt="" className="md:w-[380px] w-[400px]" />
+              <img src={P3.src} alt="" className="md:w-[380px] w-[200px] px-1" />
             </swiper-slide>
             <swiper-slide className="bg-transparent">
-              <img src={P4.src} alt="" className="md:w-[380px] w-[400px]" />
+              <img src={P4.src} alt="" className="md:w-[380px] w-[200px] px-1" />
             </swiper-slide>
             <swiper-slide className="bg-transparent">
-              <img src={P5.src} alt="" className="md:w-[380px] w-[400px]" />
+              <img src={P5.src} alt="" className="md:w-[380px] w-[200px] px-1" />
             </swiper-slide>
             <swiper-slide className="bg-transparent">
-              <img src={P7.src} alt="" className="md:w-[380px] w-[400px]" />
+              <img src={P7.src} alt="" className="md:w-[380px] w-[200px] px-1" />
             </swiper-slide>
             <swiper-slide className="bg-transparent">
-              <img src={P8.src} alt="" className="md:w-[380px] w-[400px]" />
+              <img src={P8.src} alt="" className="md:w-[380px] w-[200px] px-1" />
             </swiper-slide>
           </swiper-container>
         </div>

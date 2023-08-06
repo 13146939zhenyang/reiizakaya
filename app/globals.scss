@@ -44,7 +44,7 @@ swiper-container {
     width: 700px;
 
     @media screen and (max-width: 600px) {
-        width: 400px;
+        width: 200px;
     }
 
     height: auto;
@@ -64,7 +64,23 @@ swiper-container {
 }
 
 .photo-swiper swiper-slide {
-    width: 287px;
+    width: 300px;
+
+    @media screen and (max-width: 600px) {
+        width: 200px;
+    }
     height: auto;
     margin: 15px 0px;
+}
+
+.photo-swiper {
+    --swiper-scrollbar-border-radius: 10px;
+    --swiper-scrollbar-top: auto;
+    --swiper-scrollbar-bottom: 0;
+    --swiper-scrollbar-left: auto;
+    --swiper-scrollbar-right: 4px;
+    --swiper-scrollbar-sides-offset: 5%;
+    --swiper-scrollbar-bg-color: rgba(255, 255, 255, 0.2);
+    --swiper-scrollbar-drag-bg-color: white;
+    --swiper-scrollbar-size: 6px;
 }
