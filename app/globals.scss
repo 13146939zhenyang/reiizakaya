@@ -44,7 +44,7 @@ swiper-container {
     width: 700px;
 
     @media screen and (max-width: 600px) {
-        width: 200px;
+        width: 400px;
     }
 
     height: auto;
@@ -64,7 +64,7 @@ swiper-container {
 }
 
 .photo-swiper swiper-slide {
-    width: 300px;
+    width: 480px;
 
     @media screen and (max-width: 600px) {
         width: 200px;

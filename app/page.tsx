@@ -1,5 +1,7 @@
+'use client'
 import { Navbar } from "@/components"
 import { Logo, Name, Icon, HomeBg, Menu1, Menu2, Menu3, Menu4, P1, P2, P3, P4, P5, P6, P7, P8 } from '@/public'
+import { Image } from 'antd'
 
 export default function Home() {
   return (
@@ -27,16 +29,64 @@ export default function Home() {
             zoom="true"
           >
             <swiper-slide className="bg-transparent">
-              <img src={Menu1.src} alt="" className="md:w-[680px] w-[400px] p-3" />
+              <Image.PreviewGroup
+                items={[
+                  Menu1.src,
+                  Menu2.src,
+                  Menu3.src,
+                  Menu4.src,
+                ]}
+              >
+                <Image
+                  className="md:w-[680px] w-[400px] p-3"
+                  src={Menu1.src}
+                />
+              </Image.PreviewGroup>
             </swiper-slide>
             <swiper-slide className="bg-transparent">
-              <img src={Menu2.src} alt="" className="md:w-[680px] w-[400px] p-3" />
+              <Image.PreviewGroup
+                items={[
+                  Menu1.src,
+                  Menu2.src,
+                  Menu3.src,
+                  Menu4.src,
+                ]}
+              >
+                <Image
+                  className="md:w-[680px] w-[400px] p-3"
+                  src={Menu2.src}
+                />
+              </Image.PreviewGroup>
             </swiper-slide>
             <swiper-slide className="bg-transparent">
-              <img src={Menu3.src} alt="" className="md:w-[680px] w-[400px] p-3" />
+              <Image.PreviewGroup
+                items={[
+                  Menu1.src,
+                  Menu2.src,
+                  Menu3.src,
+                  Menu4.src,
+                ]}
+              >
+                <Image
+                  className="md:w-[680px] w-[400px] p-3"
+                  src={Menu3.src}
+                />
+              </Image.PreviewGroup>
             </swiper-slide>
             <swiper-slide className="bg-transparent">
-              <img src={Menu4.src} alt="" className="md:w-[680px] w-[400px] p-3" />
+              <Image.PreviewGroup
+                items={[
+                  Menu1.src,
+                  Menu2.src,
+                  Menu3.src,
+                  Menu4.src,
+                ]}
+              >
+                <Image
+                  className="md:w-[680px] w-[400px] p-3"
+                  src={Menu4.src}
+                />
+              </Image.PreviewGroup>
             </swiper-slide>
           </swiper-container>
 
@@ -71,25 +121,37 @@ export default function Home() {
             zoom="true"
           >
             <swiper-slide className="bg-transparent">
-              <img src={P1.src} alt="" className="md:w-[380px] w-[200px] px-1" />
+              <Image.PreviewGroup
+                items={[
+                  P1.src,
+                ]}
+              >
+                <Image
+                  className="md:w-[480px] w-[200px] md:px-2 px-1"
+                  src={P1.src}
+                />
+              </Image.PreviewGroup>
             </swiper-slide>
             <swiper-slide className="bg-transparent">
-              <img src={P2.src} alt="" className="md:w-[380px] w-[200px] px-1" />
+              <img src={P2.src} alt="" className="md:w-[480px] w-[200px] md:px-2 px-1" />
             </swiper-slide>
             <swiper-slide className="bg-transparent">
-              <img src={P3.src} alt="" className="md:w-[380px] w-[200px] px-1" />
+              <img src={P3.src} alt="" className="md:w-[480px] w-[200px] md:px-2 px-1" />
             </swiper-slide>
             <swiper-slide className="bg-transparent">
-              <img src={P4.src} alt="" className="md:w-[380px] w-[200px] px-1" />
+              <img src={P4.src} alt="" className="md:w-[480px] w-[200px] md:px-2 px-1" />
             </swiper-slide>
             <swiper-slide className="bg-transparent">
-              <img src={P5.src} alt="" className="md:w-[380px] w-[200px] px-1" />
+              <img src={P5.src} alt="" className="md:w-[480px] w-[200px] md:px-2 px-1" />
             </swiper-slide>
             <swiper-slide className="bg-transparent">
-              <img src={P7.src} alt="" className="md:w-[380px] w-[200px] px-1" />
+              <img src={P6.src} alt="" className="md:w-[480px] w-[200px] md:px-2 px-1" />
             </swiper-slide>
             <swiper-slide className="bg-transparent">
-              <img src={P8.src} alt="" className="md:w-[380px] w-[200px] px-1" />
+              <img src={P7.src} alt="" className="md:w-[480px] w-[200px] md:px-2 px-1" />
+            </swiper-slide>
+            <swiper-slide className="bg-transparent">
+              <img src={P8.src} alt="" className="md:w-[480px] w-[200px] md:px-2 px-1" />
             </swiper-slide>
           </swiper-container>
         </div>
