@@ -1,24 +1,8 @@
 "use client";
 import { InsModal, Navbar } from "@/components";
-import {
-  Logo,
-  Name,
-  Icon,
-  HomeBg,
-  Menu1,
-  Menu2,
-  Menu3,
-  Menu4,
-  P1,
-  P2,
-  P3,
-  P4,
-  P5,
-  P6,
-  P7,
-  P8,
-} from "@/public";
-import { Image } from "antd";
+import { HomeBg } from "@/public";
+import { Image as DefaultImage } from "antd";
+import Image from "next/image";
 
 export default function Home() {
   const images = [
@@ -78,7 +62,7 @@ export default function Home() {
             zoom="true"
           >
             <swiper-slide className="bg-transparent">
-              <Image.PreviewGroup
+              <DefaultImage.PreviewGroup
                 items={[
                   "https://izakaya-asset.s3.ap-southeast-2.amazonaws.com/rei1.webp",
                   "https://izakaya-asset.s3.ap-southeast-2.amazonaws.com/rei2.webp",
@@ -86,14 +70,14 @@ export default function Home() {
                   "https://izakaya-asset.s3.ap-southeast-2.amazonaws.com/rei4.webp",
                 ]}
               >
-                <Image
+                <DefaultImage
                   className="md:w-[680px] w-[400px] p-3"
                   src="https://izakaya-asset.s3.ap-southeast-2.amazonaws.com/rei1.webp"
                 />
-              </Image.PreviewGroup>
+              </DefaultImage.PreviewGroup>
             </swiper-slide>
             <swiper-slide className="bg-transparent">
-              <Image.PreviewGroup
+              <DefaultImage.PreviewGroup
                 items={[
                   "https://izakaya-asset.s3.ap-southeast-2.amazonaws.com/rei1.webp",
                   "https://izakaya-asset.s3.ap-southeast-2.amazonaws.com/rei2.webp",
@@ -101,16 +85,16 @@ export default function Home() {
                   "https://izakaya-asset.s3.ap-southeast-2.amazonaws.com/rei4.webp",
                 ]}
               >
-                <Image
+                <DefaultImage
                   className="md:w-[680px] w-[400px] p-3"
                   src={
                     "https://izakaya-asset.s3.ap-southeast-2.amazonaws.com/rei2.webp"
                   }
                 />
-              </Image.PreviewGroup>
+              </DefaultImage.PreviewGroup>
             </swiper-slide>
             <swiper-slide className="bg-transparent">
-              <Image.PreviewGroup
+              <DefaultImage.PreviewGroup
                 items={[
                   "https://izakaya-asset.s3.ap-southeast-2.amazonaws.com/rei1.webp",
                   "https://izakaya-asset.s3.ap-southeast-2.amazonaws.com/rei2.webp",
@@ -118,16 +102,16 @@ export default function Home() {
                   "https://izakaya-asset.s3.ap-southeast-2.amazonaws.com/rei4.webp",
                 ]}
               >
-                <Image
+                <DefaultImage
                   className="md:w-[680px] w-[400px] p-3"
                   src={
                     "https://izakaya-asset.s3.ap-southeast-2.amazonaws.com/rei3.webp"
                   }
                 />
-              </Image.PreviewGroup>
+              </DefaultImage.PreviewGroup>
             </swiper-slide>
             <swiper-slide className="bg-transparent">
-              <Image.PreviewGroup
+              <DefaultImage.PreviewGroup
                 items={[
                   "https://izakaya-asset.s3.ap-southeast-2.amazonaws.com/rei1.webp",
                   "https://izakaya-asset.s3.ap-southeast-2.amazonaws.com/rei2.webp",
@@ -135,22 +119,32 @@ export default function Home() {
                   "https://izakaya-asset.s3.ap-southeast-2.amazonaws.com/rei4.webp",
                 ]}
               >
-                <Image
+                <DefaultImage
                   className="md:w-[680px] w-[400px] p-3"
                   src={
                     "https://izakaya-asset.s3.ap-southeast-2.amazonaws.com/rei4.webp"
                   }
                 />
-              </Image.PreviewGroup>
+              </DefaultImage.PreviewGroup>
             </swiper-slide>
           </swiper-container>
+
+          <Image
+            className="mx-auto"
+            src="https://izakaya-asset.s3.ap-southeast-2.amazonaws.com/rei-policy.webp"
+            alt="reiizakaya-news"
+            loading="lazy"
+            width={1000}
+            height={1000}
+          />
         </div>
         <div
           className="w-screen my-5 md:my-20 py-5 justify-center flex "
           id="news"
         >
           <Image
-            src="https://izakaya-asset.s3.ap-southeast-2.amazonaws.com/rei-post.webp"
+            src="https://izakaya-asset.s3.ap-southeast-2.amazonaws.com/rei-post-v1.webp"
+            alt="reiizakaya-news"
             loading="lazy"
             width={1000}
             height={1000}
@@ -188,18 +182,21 @@ export default function Home() {
           >
             {images.map((image, index) => (
               <swiper-slide className="bg-transparent" key={index}>
-                <Image.PreviewGroup items={images}>
-                  <Image
+                <DefaultImage.PreviewGroup items={images}>
+                  <DefaultImage
                     className="md:w-[480px] w-[200px] md:px-2 px-1"
                     src={image}
                     loading="lazy"
                   />
-                </Image.PreviewGroup>
+                </DefaultImage.PreviewGroup>
               </swiper-slide>
             ))}
           </swiper-container>
         </div>
-        <div className="w-screen my-5 md:my-20 py-5" id="contact-booking">
+        <div className="w-screen my-5 md:my-20 py-20" id="contact-booking">
+          <div className="flex items-center justify-center">
+            <InsModal />
+          </div>
           <div className=" md:mx-40 mx-5 flex flex-col mb-4 md:p-4 p-2">
             <p className="md:tracking-widest tracking-tighter md:text-2xl text-[14px] md:mb-1 mb-[2px]">
               You can find us with @rei_izakaya on Instagram & Facebook
@@ -222,9 +219,6 @@ export default function Home() {
             <p className="md:tracking-widest tracking-tighter md:text-2xl text-[14px] md:mb-1 mb-[2px]">
               Sorry for any inconvenience.
             </p>
-          </div>
-          <div className="flex items-center justify-center">
-            <InsModal />
           </div>
         </div>
       </div>

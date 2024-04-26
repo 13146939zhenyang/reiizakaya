@@ -88,7 +88,7 @@ const Navbar = () => {
           } w-[70px] md:mt-5 mt-1 transition-all ease-in-out duration-150`}
         />
       </div>
-      <div className="md:mx-40 mx-2 flex justify-between items-center pb-5">
+      <div className="xl:mx-40 mx-2 flex justify-between items-center pb-5">
         {navbar.map((item, index) => (
           <div key={index} onClick={() => handleClick(item.key, item.path)}>
             <p
