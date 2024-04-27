@@ -57,7 +57,7 @@ const Navbar = () => {
   return (
     <div
       className={`fixed top-0 ${
-        scrolled ? "md:pt-[24px]" : "md:pt-[64px]"
+        scrolled ? "xl:pt-[24px]" : "xl:pt-[64px]"
       } pt-[20px] w-screen z-50 ${
         scrolled
           ? "bg-[#173448] bg-opacity-80 backdrop-filter backdrop-blur-lg shadow-[0_0_10px] shadow-white"
@@ -65,37 +65,37 @@ const Navbar = () => {
       }`}
       ref={headerRef}
     >
-      <div className="md:mx-40 mx-10 flex justify-center items-center mb-4">
+      <div className="xl:mx-40 mx-10 flex justify-center items-center mb-4">
         <img
           src={Logo.src}
           alt="reiizakaya-logo"
           className={`${
-            scrolled ? "md:w-[61px]" : "md:w-[161px]"
-          } w-[60px] md:mr-6 mr-1 md:mt-1 transition-all ease-in-out duration-150`}
+            scrolled ? "xl:w-[61px]" : "xl:w-[161px]"
+          } w-[60px] xl:mr-6 mr-1 xl:mt-1 transition-all ease-in-out duration-150`}
         />
         <img
           src={Icon.src}
           alt="reiizakaya-icon"
           className={`${
-            scrolled ? "md:w-[140px]" : "md:w-[286px]"
-          } w-[100px] md:mr-5 mr-1 transition-all ease-in-out duration-150 drop-shadow-[0_0_10px] shadow-white`}
+            scrolled ? "xl:w-[140px]" : "xl:w-[286px]"
+          } w-[100px] xl:mr-5 mr-1 transition-all ease-in-out duration-150 drop-shadow-[0_0_10px] shadow-white`}
         />
         <img
           src={Name.src}
           alt="reiizakay-name"
           className={`${
-            scrolled ? "md:w-[100px]" : "md:w-[224px]"
-          } w-[70px] md:mt-5 mt-1 transition-all ease-in-out duration-150`}
+            scrolled ? "xl:w-[100px]" : "xl:w-[224px]"
+          } w-[70px] xl:mt-5 mt-1 transition-all ease-in-out duration-150`}
         />
       </div>
-      <div className="xl:mx-40 mx-2 flex justify-between items-center pb-5">
+      <div className="xl:mx-40 mx-2 flex justify-between items-center lg:pb-5 pb-2">
         {navbar.map((item, index) => (
           <div key={index} onClick={() => handleClick(item.key, item.path)}>
             <p
               className={`${
                 selected === item.key ? "text-[#B11F24]" : "text-[#F2F2F2]"
               } text-[12px] ${
-                scrolled ? "md:text-xl" : "md:text-2xl"
+                scrolled ? "xl:text-xl" : "xl:text-2xl"
               }  font-bold cursor-pointer hover:text-[#B11F24] transition-all duration-150 ease-in-out`}
             >
               {item.label}

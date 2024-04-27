@@ -194,8 +194,20 @@ export default function Home() {
           </swiper-container>
         </div>
         <div className="w-screen my-5 md:my-20 py-20" id="contact-booking">
-          <div className="flex items-center justify-center">
+          {/* <div className="flex items-center justify-center">
             <InsModal />
+          </div> */}
+          <div className="flex justify-center items-center my-10">
+            <div className="relative w-[250px] h-[250px]">
+              <Image
+                src={`https://izakaya-asset.s3.ap-southeast-2.amazonaws.com/rei-ins.webp`}
+                alt="instagram"
+                width={500}
+                height={500}
+                className="w-full mt-5"
+                loading="lazy"
+              />
+            </div>
           </div>
           <div className=" md:mx-40 mx-5 flex flex-col mb-4 md:p-4 p-2">
             <p className="md:tracking-widest tracking-tighter md:text-2xl text-[14px] md:mb-1 mb-[2px]">
