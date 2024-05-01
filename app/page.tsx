@@ -6,21 +6,21 @@ import Image from "next/image";
 
 export default function Home() {
   const images = [
-    "https://izakaya-asset.s3.ap-southeast-2.amazonaws.com/IMG_7184.JPG",
-    "https://izakaya-asset.s3.ap-southeast-2.amazonaws.com/IMG_7185.JPG",
-    "https://izakaya-asset.s3.ap-southeast-2.amazonaws.com/IMG_7186.JPG",
-    "https://izakaya-asset.s3.ap-southeast-2.amazonaws.com/IMG_7187.JPG",
-    "https://izakaya-asset.s3.ap-southeast-2.amazonaws.com/IMG_7188.JPG",
-    "https://izakaya-asset.s3.ap-southeast-2.amazonaws.com/IMG_7189.JPG",
-    "https://izakaya-asset.s3.ap-southeast-2.amazonaws.com/IMG_7190.JPG",
-    "https://izakaya-asset.s3.ap-southeast-2.amazonaws.com/IMG_7191.JPG",
-    "https://izakaya-asset.s3.ap-southeast-2.amazonaws.com/IMG_7192.JPG",
-    "https://izakaya-asset.s3.ap-southeast-2.amazonaws.com/IMG_7193.JPG",
-    "https://izakaya-asset.s3.ap-southeast-2.amazonaws.com/IMG_7194.JPG",
-    "https://izakaya-asset.s3.ap-southeast-2.amazonaws.com/IMG_7195.JPG",
-    "https://izakaya-asset.s3.ap-southeast-2.amazonaws.com/IMG_7196.JPG",
-    "https://izakaya-asset.s3.ap-southeast-2.amazonaws.com/IMG_7197.JPG",
-    "https://izakaya-asset.s3.ap-southeast-2.amazonaws.com/IMG_7198.JPG",
+    "https://izakaya-asset.s3.ap-southeast-2.amazonaws.com/IMG_7184.webp",
+    "https://izakaya-asset.s3.ap-southeast-2.amazonaws.com/IMG_7185.webp",
+    "https://izakaya-asset.s3.ap-southeast-2.amazonaws.com/IMG_7186.webp",
+    "https://izakaya-asset.s3.ap-southeast-2.amazonaws.com/IMG_7187.webp",
+    "https://izakaya-asset.s3.ap-southeast-2.amazonaws.com/IMG_7188.webp",
+    "https://izakaya-asset.s3.ap-southeast-2.amazonaws.com/IMG_7189.webp",
+    "https://izakaya-asset.s3.ap-southeast-2.amazonaws.com/IMG_7190.webp",
+    "https://izakaya-asset.s3.ap-southeast-2.amazonaws.com/IMG_7191.webp",
+    "https://izakaya-asset.s3.ap-southeast-2.amazonaws.com/IMG_7192.webp",
+    "https://izakaya-asset.s3.ap-southeast-2.amazonaws.com/IMG_7193.webp",
+    "https://izakaya-asset.s3.ap-southeast-2.amazonaws.com/IMG_7194.webp",
+    "https://izakaya-asset.s3.ap-southeast-2.amazonaws.com/IMG_7195.webp",
+    "https://izakaya-asset.s3.ap-southeast-2.amazonaws.com/IMG_7196.webp",
+    "https://izakaya-asset.s3.ap-southeast-2.amazonaws.com/IMG_7197.webp",
+    "https://izakaya-asset.s3.ap-southeast-2.amazonaws.com/IMG_7198.webp",
   ];
   return (
     <main className="relative w-screen">
