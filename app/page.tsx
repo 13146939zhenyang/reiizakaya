@@ -27,6 +27,9 @@ export default function Home() {
       <Navbar />
       <div className="w-screen md:pt-[300px] pt-[120px]">
         <div className="" id="about-us">
+          <div className="w-full aspect-[250/121] relative">
+            <Image src={HomeBg.src} alt="reiizakaya-syd-home-bg" fill className="py-5 mx-auto" loading='lazy' />
+          </div>
           <div className="mx-4 md:mx-40 my-5 md:my-10 flex flex-col gap-2 md:gap-4 text-[14px] md:text-xl text-justify">
             <p>
               Izakaya (居酒屋) is made up of three kanji with the meaning, in
@@ -46,7 +49,7 @@ export default function Home() {
               limited to Japanese tap beer, sake and whiskys.
             </p>
           </div>
-          <img src={HomeBg.src} alt="reiizakaya-syd-home-bg" className="pt-5" />
+
         </div>
         <div
           className="w-screen justify-center sm:justify-start flex flex-row flex-wrap pb-5 gap-x-6 gap-y-10 overflow-hidden"
@@ -129,14 +132,14 @@ export default function Home() {
             </swiper-slide>
           </swiper-container>
 
-          <Image
+          {/* <Image
             className="mx-auto"
             src="https://izakaya-asset.s3.ap-southeast-2.amazonaws.com/rei-policy.webp"
             alt="reiizakaya-news"
             loading="lazy"
             width={1000}
             height={1000}
-          />
+          /> */}
         </div>
         <div
           className="w-screen my-5 md:my-20 py-5 justify-center flex "
@@ -169,7 +172,7 @@ export default function Home() {
         </div>
         <div
           className="w-screen justify-center sm:justify-start flex flex-row flex-wrap pb-5 gap-x-6 gap-y-10 overflow-hidden"
-          id="pictures"
+          id="gallery"
         >
           <swiper-container
             class="photo-swiper"

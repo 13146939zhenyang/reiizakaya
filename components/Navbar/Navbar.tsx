@@ -2,6 +2,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Logo, Name, Icon } from "@/public";
 import { navbar } from "@/utils/constants";
+import Image from 'next/image'
 
 const Navbar = () => {
   const [selected, setSelected] = useState<string>("about-us");
@@ -29,7 +30,7 @@ const Navbar = () => {
       const aboutUs = document.getElementById("about-us");
       const menu = document.getElementById("menu");
       const news = document.getElementById("news");
-      const pictures = document.getElementById("pictures");
+      const gallery = document.getElementById("gallery");
       const contactBooking = document.getElementById("contact-booking");
       if (window.scrollY > 0) {
         setScrolled(true);
@@ -43,8 +44,8 @@ const Navbar = () => {
       if (window.scrollY > news?.offsetTop! - aboutUs?.offsetTop!) {
         setSelected("news");
       }
-      if (window.scrollY > pictures?.offsetTop! - aboutUs?.offsetTop!) {
-        setSelected("pictures");
+      if (window.scrollY > gallery?.offsetTop! - aboutUs?.offsetTop!) {
+        setSelected("gallery");
       }
       if (window.scrollY > contactBooking?.offsetTop! - aboutUs?.offsetTop!) {
         setSelected("contact-booking");
@@ -56,47 +57,50 @@ const Navbar = () => {
   }, []);
   return (
     <div
-      className={`fixed top-0 ${
-        scrolled ? "xl:pt-[24px]" : "xl:pt-[64px]"
-      } pt-[20px] w-screen z-50 ${
-        scrolled
+      className={`fixed top-0 ${scrolled ? "xl:pt-[24px]" : "xl:pt-[64px]"
+        } pt-[20px] w-screen z-50 ${scrolled
           ? "bg-[#173448] bg-opacity-80 backdrop-filter backdrop-blur-lg shadow-[0_0_10px] shadow-white"
           : "bg-[#173448]"
-      }`}
+        }`}
       ref={headerRef}
     >
       <div className="xl:mx-40 mx-10 flex justify-center items-center mb-4">
-        <img
-          src={Logo.src}
-          alt="reiizakaya-logo"
-          className={`${
-            scrolled ? "xl:w-[61px]" : "xl:w-[161px]"
-          } w-[60px] xl:mr-6 mr-1 xl:mt-1 transition-all ease-in-out duration-150`}
-        />
-        <img
-          src={Icon.src}
-          alt="reiizakaya-icon"
-          className={`${
-            scrolled ? "xl:w-[140px]" : "xl:w-[286px]"
-          } w-[100px] xl:mr-5 mr-1 transition-all ease-in-out duration-150 drop-shadow-[0_0_10px] shadow-white`}
-        />
-        <img
-          src={Name.src}
-          alt="reiizakay-name"
-          className={`${
-            scrolled ? "xl:w-[100px]" : "xl:w-[224px]"
-          } w-[70px] xl:mt-5 mt-1 transition-all ease-in-out duration-150`}
-        />
+        <div className={`${scrolled ? "xl:w-[61px]" : "xl:w-[161px]"
+          } w-[60px] xl:mr-6 mr-1 xl:mt-1 transition-all ease-in-out duration-150 relative aspect-square`}>
+          <Image
+            src={Logo.src}
+            alt="reiizakaya-logo"
+            fill
+            loading="lazy"
+          />
+        </div>
+        <div className={`${scrolled ? "xl:w-[140px]" : "xl:w-[286px]"
+          } w-[100px] xl:mr-5 mr-1 transition-all ease-in-out duration-150 drop-shadow-[0_0_10px] shadow-white relative aspect-[7/4]`}>
+          <Image
+            src={Icon.src}
+            alt="reiizakaya-icon"
+            fill
+          />
+        </div>
+
+        <div className={`${scrolled ? "xl:w-[100px]" : "xl:w-[224px]"
+          } w-[70px] xl:mt-5 mt-1 transition-all ease-in-out duration-150 relative aspect-[3/1]`}>
+          <Image
+            src={Name.src}
+            alt="reiizakay-name"
+            fill
+            loading='lazy'
+          />
+        </div>
+
       </div>
       <div className="xl:mx-40 mx-2 flex justify-between items-center lg:pb-5 pb-2">
         {navbar.map((item, index) => (
           <div key={index} onClick={() => handleClick(item.key, item.path)}>
             <p
-              className={`${
-                selected === item.key ? "text-[#B11F24]" : "text-[#F2F2F2]"
-              } text-[12px] ${
-                scrolled ? "xl:text-xl" : "xl:text-2xl"
-              }  font-bold cursor-pointer hover:text-[#B11F24] transition-all duration-150 ease-in-out`}
+              className={`${selected === item.key ? "text-[#B11F24]" : "text-[#F2F2F2]"
+                } text-[12px] ${scrolled ? "xl:text-xl" : "xl:text-2xl"
+                }  font-bold cursor-pointer hover:text-[#B11F24] transition-all duration-150 ease-in-out`}
             >
               {item.label}
             </p>
