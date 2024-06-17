@@ -146,7 +146,7 @@ export default function Home() {
           id="news"
         >
           <Image
-            src="https://izakaya-asset.s3.ap-southeast-2.amazonaws.com/rei-post-v1.webp"
+            src="https://izakaya-asset.s3.ap-southeast-2.amazonaws.com/reiizakaya-news.PNG"
             alt="reiizakaya-news"
             loading="lazy"
             width={1000}
