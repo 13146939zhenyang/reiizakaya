@@ -59,8 +59,8 @@ const Navbar = () => {
     <div
       className={`fixed top-0 ${
         // scrolled ? "xl:pt-0 pt-[24px]" : "xl:pt-[64px]"
-        scrolled ? "pt-0" : "xl:pt-[64px]"
-      } pt-[20px] w-screen z-50 ${
+        scrolled ? "pt-0" : "xl:pt-[64px] pt-[20px]"
+      }  w-screen z-50 ${
         scrolled
           ? "bg-[#173448] bg-opacity-80 backdrop-filter backdrop-blur-lg shadow-[1px_2px_7px_black]"
           : "bg-[#173448]"
@@ -69,8 +69,8 @@ const Navbar = () => {
     >
       <div
         className={`${
-          scrolled ? "h-0 mb-2" : "h-auto mb-4"
-        } xl:mx-40 mx-10 flex justify-center items-center transition-all ease-in-out duration-[300ms]`}
+          scrolled ? "h-0 mb-4" : "h-auto mb-4"
+        } xl:mx-40 mx-10 flex justify-center items-center transition-all ease-in-out duration-[300ms] overflow-hidden`}
       >
         <div
           className={`${
