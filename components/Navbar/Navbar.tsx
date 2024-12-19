@@ -76,16 +76,16 @@ const Navbar = () => {
           className={`${
             // scrolled ? "xl:w-0 w-[61px]" : "xl:w-[161px]"
             scrolled ? "w-0" : "xl:w-[161px]"
-          } w-[60px] xl:mr-6 mr-1 xl:mt-1 transition-all ease-in-out duration-[300ms] relative aspect-square`}
+          } overflow-hidden w-[60px] xl:mr-6 mr-1 xl:mt-1 transition-all ease-in-out duration-[300ms] relative aspect-square`}
         >
           <Image src={Logo.src} alt="reiizakaya-logo" fill loading="lazy" />
         </div>
-        
+
         <div
           className={`${
             // scrolled ? "xl:w-0 w-[140px]" : "xl:w-[286px]"
             scrolled ? "w-0" : "xl:w-[286px]"
-          } w-[100px] xl:mr-5 mr-1 transition-all ease-in-out duration-[300ms] drop-shadow-[0_0_10px] shadow-white relative aspect-[7/4]`}
+          } overflow-hidden w-[100px] xl:mr-5 mr-1 transition-all ease-in-out duration-[300ms] drop-shadow-[0_0_10px] shadow-white relative aspect-[7/4]`}
         >
           <Image src={Icon.src} alt="reiizakaya-icon" fill />
         </div>
@@ -94,7 +94,7 @@ const Navbar = () => {
           className={`${
             // scrolled ? "xl:w-0 w-[100px]" : "xl:w-[224px]"
             scrolled ? "w-0" : "xl:w-[224px]"
-          } w-[70px] xl:mt-5 mt-1 transition-all ease-in-out duration-[300ms] relative aspect-[3/1]`}
+          } overflow-hidden w-[70px] xl:mt-5 mt-1 transition-all ease-in-out duration-[300ms] relative aspect-[3/1]`}
         >
           <Image src={Name.src} alt="reiizakay-name" fill loading="lazy" />
         </div>
