@@ -69,7 +69,7 @@ const Navbar = () => {
     >
       <div
         className={`${
-          scrolled ? "h-0 mb-4" : "h-auto mb-4"
+          scrolled ? "h-0 mb-4 py-0" : "h-auto mb-4 py-4"
         } xl:mx-40 mx-10 flex justify-center items-center transition-all ease-in-out duration-[300ms] overflow-hidden`}
       >
         <div
