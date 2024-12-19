@@ -57,50 +57,52 @@ const Navbar = () => {
   }, []);
   return (
     <div
-      className={`fixed top-0 ${scrolled ? "xl:pt-[24px]" : "xl:pt-[64px]"
-        } pt-[20px] w-screen z-50 ${scrolled
-          ? "bg-[#173448] bg-opacity-80 backdrop-filter backdrop-blur-lg shadow-[0_0_10px] shadow-white"
+      className={`fixed top-0 ${
+        scrolled ? "xl:pt-0 pt-[24px]" : "xl:pt-[64px]"
+      } pt-[20px] w-screen z-50 ${
+        scrolled
+          ? "bg-[#173448] bg-opacity-80 backdrop-filter backdrop-blur-lg shadow-[1px_2px_7px_black]"
           : "bg-[#173448]"
-        }`}
+      }`}
       ref={headerRef}
     >
-      <div className="xl:mx-40 mx-10 flex justify-center items-center mb-4">
-        <div className={`${scrolled ? "xl:w-[61px]" : "xl:w-[161px]"
-          } w-[60px] xl:mr-6 mr-1 xl:mt-1 transition-all ease-in-out duration-150 relative aspect-square`}>
-          <Image
-            src={Logo.src}
-            alt="reiizakaya-logo"
-            fill
-            loading="lazy"
-          />
+      <div
+        className={`${
+          scrolled ? "h-0" : "h-auto"
+        } xl:mx-40 mx-10 flex justify-center items-center mb-4 transition-all ease-in-out duration-[300ms]`}
+      >
+        <div
+          className={`${
+            scrolled ? "xl:w-0 w-[61px]" : "xl:w-[161px]"
+          } w-[60px] xl:mr-6 mr-1 xl:mt-1 transition-all ease-in-out duration-[300ms] relative aspect-square`}
+        >
+          <Image src={Logo.src} alt="reiizakaya-logo" fill loading="lazy" />
         </div>
-        <div className={`${scrolled ? "xl:w-[140px]" : "xl:w-[286px]"
-          } w-[100px] xl:mr-5 mr-1 transition-all ease-in-out duration-150 drop-shadow-[0_0_10px] shadow-white relative aspect-[7/4]`}>
-          <Image
-            src={Icon.src}
-            alt="reiizakaya-icon"
-            fill
-          />
-        </div>
-
-        <div className={`${scrolled ? "xl:w-[100px]" : "xl:w-[224px]"
-          } w-[70px] xl:mt-5 mt-1 transition-all ease-in-out duration-150 relative aspect-[3/1]`}>
-          <Image
-            src={Name.src}
-            alt="reiizakay-name"
-            fill
-            loading='lazy'
-          />
+        <div
+          className={`${
+            scrolled ? "xl:w-0 w-[140px]" : "xl:w-[286px]"
+          } w-[100px] xl:mr-5 mr-1 transition-all ease-in-out duration-[300ms] drop-shadow-[0_0_10px] shadow-white relative aspect-[7/4]`}
+        >
+          <Image src={Icon.src} alt="reiizakaya-icon" fill />
         </div>
 
+        <div
+          className={`${
+            scrolled ? "xl:w-0 w-[100px]" : "xl:w-[224px]"
+          } w-[70px] xl:mt-5 mt-1 transition-all ease-in-out duration-[300ms] relative aspect-[3/1]`}
+        >
+          <Image src={Name.src} alt="reiizakay-name" fill loading="lazy" />
+        </div>
       </div>
       <div className="xl:mx-40 mx-2 flex justify-between items-center lg:pb-5 pb-2">
         {navbar.map((item, index) => (
           <div key={index} onClick={() => handleClick(item.key, item.path)}>
             <p
-              className={`${selected === item.key ? "text-[#B11F24]" : "text-[#F2F2F2]"
-                } text-[12px] ${scrolled ? "xl:text-xl" : "xl:text-2xl"
-                }  font-bold cursor-pointer hover:text-[#B11F24] transition-all duration-150 ease-in-out`}
+              className={`${
+                selected === item.key ? "text-[#B11F24]" : "text-[#F2F2F2]"
+              } text-[12px] ${
+                scrolled ? "xl:text-xl" : "xl:text-2xl"
+              }  font-bold cursor-pointer hover:text-[#B11F24] transition-all duration-[300ms] ease-in-out`}
             >
               {item.label}
             </p>
