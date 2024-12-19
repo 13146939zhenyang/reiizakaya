@@ -58,7 +58,8 @@ const Navbar = () => {
   return (
     <div
       className={`fixed top-0 ${
-        scrolled ? "xl:pt-0 pt-[24px]" : "xl:pt-[64px]"
+        // scrolled ? "xl:pt-0 pt-[24px]" : "xl:pt-[64px]"
+        scrolled ? "pt-0" : "xl:pt-[64px]"
       } pt-[20px] w-screen z-50 ${
         scrolled
           ? "bg-[#173448] bg-opacity-80 backdrop-filter backdrop-blur-lg shadow-[1px_2px_7px_black]"
@@ -68,19 +69,21 @@ const Navbar = () => {
     >
       <div
         className={`${
-          scrolled ? "h-0" : "h-auto"
-        } xl:mx-40 mx-10 flex justify-center items-center mb-4 transition-all ease-in-out duration-[300ms]`}
+          scrolled ? "h-0 mb-2" : "h-auto mb-4"
+        } xl:mx-40 mx-10 flex justify-center items-center transition-all ease-in-out duration-[300ms]`}
       >
         <div
           className={`${
-            scrolled ? "xl:w-0 w-[61px]" : "xl:w-[161px]"
+            // scrolled ? "xl:w-0 w-[61px]" : "xl:w-[161px]"
+            scrolled ? "w-0" : "xl:w-[161px]"
           } w-[60px] xl:mr-6 mr-1 xl:mt-1 transition-all ease-in-out duration-[300ms] relative aspect-square`}
         >
           <Image src={Logo.src} alt="reiizakaya-logo" fill loading="lazy" />
         </div>
         <div
           className={`${
-            scrolled ? "xl:w-0 w-[140px]" : "xl:w-[286px]"
+            // scrolled ? "xl:w-0 w-[140px]" : "xl:w-[286px]"
+            scrolled ? "w-0" : "xl:w-[286px]"
           } w-[100px] xl:mr-5 mr-1 transition-all ease-in-out duration-[300ms] drop-shadow-[0_0_10px] shadow-white relative aspect-[7/4]`}
         >
           <Image src={Icon.src} alt="reiizakaya-icon" fill />
@@ -88,7 +91,8 @@ const Navbar = () => {
 
         <div
           className={`${
-            scrolled ? "xl:w-0 w-[100px]" : "xl:w-[224px]"
+            // scrolled ? "xl:w-0 w-[100px]" : "xl:w-[224px]"
+            scrolled ? "w-0" : "xl:w-[224px]"
           } w-[70px] xl:mt-5 mt-1 transition-all ease-in-out duration-[300ms] relative aspect-[3/1]`}
         >
           <Image src={Name.src} alt="reiizakay-name" fill loading="lazy" />
