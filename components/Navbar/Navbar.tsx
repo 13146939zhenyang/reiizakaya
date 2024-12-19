@@ -80,6 +80,7 @@ const Navbar = () => {
         >
           <Image src={Logo.src} alt="reiizakaya-logo" fill loading="lazy" />
         </div>
+        
         <div
           className={`${
             // scrolled ? "xl:w-0 w-[140px]" : "xl:w-[286px]"
