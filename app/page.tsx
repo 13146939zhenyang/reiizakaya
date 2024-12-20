@@ -21,6 +21,7 @@ import i7 from "@/public/menu/i7.jpg";
 import i8 from "@/public/menu/i8.jpg";
 import i9 from "@/public/menu/i9.jpg";
 import qr from "@/public/menu/qr.png";
+import news from "@/public/menu/news1.jpg";
 
 export default function Home() {
   const images = [
@@ -122,6 +123,11 @@ export default function Home() {
               </swiper-slide>
             ))}
           </swiper-container>
+        </div>
+        <div className="lg:max-w-2xl lg:mx-auto w-screen p-5" id="news">
+          <div className="w-full aspect-square relative">
+            <Image src={news.src} alt="news" fill loading="lazy" />
+          </div>
         </div>
         <div className="w-screen my-5 md:my-20 py-20" id="contact-booking">
           {/* <div className="flex items-center justify-center">
